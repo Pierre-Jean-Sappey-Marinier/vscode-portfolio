@@ -4,6 +4,12 @@
   line-height: 2rem;
 }
 
+.code2 {
+  counter-reset: line + 1;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
 .line::before {
   content: counter(line);
   counter-increment: line;

@@ -1,27 +1,29 @@
-import Link from 'next/link';
-import Illustration from '../components/Illustration';
-import styles from '../styles/HomePage.module.css';
+import Link from "next/link";
+import Illustration from "../components/Illustration";
+import styles from "../styles/HomePage.module.css";
 
 export default function HomePage() {
   return (
     <>
       <div className={styles.container}>
         <div className={styles.background}>
-          <h1>I BUILD</h1>
-          <h1>WEBSITES</h1>
+          <h1>J'aime</h1>
+          <h1>Adeline</h1>
+          <h1>de tout</h1>
+          <h1>mon coeur</h1>
         </div>
         <div className={styles.foreground}>
           <div className={styles.content}>
-            <h1 className={styles.name}>Nitin Ranganath</h1>
-            <h6 className={styles.bio}>Full Stack Web Developer</h6>
+            <h1 className={styles.name}>Pierre-Jean SAPPEY-MARINIER</h1>
+            <h6 className={styles.bio}>Développeur web React Javascript</h6>
             <Link href="/projects">
-              <button className={styles.button}>View Work</button>
+              <button className={styles.button}>Mes projets</button>
             </Link>
             <Link href="/contact">
-              <button className={styles.outlined}>Contact Me</button>
+              <button className={styles.outlined}>Contactez-moi</button>
             </Link>
           </div>
-          <Illustration className={styles.illustration} />
+          {/* <Illustration className={styles.illustration} /> */}
         </div>
       </div>
     </>
@@ -30,6 +32,6 @@ export default function HomePage() {
 
 export async function getStaticProps() {
   return {
-    props: { title: 'Home' },
+    props: { title: "Home" },
   };
 }

@@ -1,12 +1,21 @@
 [
   {
     "id": 1,
-    "name": "Driwwwle",
-    "image": "https://imgur.com/kbGs6zH.png",
-    "description": "A platform for web developers to showcase their projects",
-    "tags": ["next", "node", "mongodb", "tailwind", "react-query"],
-    "source_code": "https://github.com/itsnitinr/driwwwle-v2",
-    "demo": "https://driwwwle.com/"
+    "name": "Kasa",
+    "image": "./public/Kasa.png",
+    "description": "Création d'une single page application responsive en composants fonctionnels sous React.js en utilisant la méthode CRA. Implémentation de routes avec React Router. Intégration dynamique des métadonnées via React-Helmet.",
+    "tags": [
+      "React",
+      "node",
+      "CRA",
+      "tailwind",
+      "SingPageApplication",
+      "ReactRouter",
+      "ReactHelmet",
+      "Responsive"
+    ],
+    "source_code": "https://github.com/Pierre-Jean-Sappey-Marinier/Kasa",
+    "demo": "https://pierre-jean-sappey-marinier.github.io/Kasa/"
   },
   {
     "id": 2,

@@ -1,43 +1,43 @@
-import { useState } from 'react';
-import ContactCode from '../components/ContactCode';
-import styles from '../styles/ContactPage.module.css';
+import { useState } from "react";
+import ContactCode from "../components/ContactCode";
+import styles from "../styles/ContactPage.module.css";
 
 const ContactPage = () => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
-  const [message, setMessage] = useState('');
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
 
   const submitForm = async (e) => {
     e.preventDefault();
     console.log(process.env.NEXT_PUBLIC_API_URL);
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/contact`, {
-      method: 'POST',
+      method: "POST",
       body: JSON.stringify({ name, email, subject, message }),
     });
     if (res.ok) {
-      alert('Your response has been received!');
-      setName('');
-      setEmail('');
-      setSubject('');
-      setMessage('');
+      alert("Your response has been received!");
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
     } else {
-      alert('There was an error. Please try again in a while.');
+      alert("There was an error. Please try again in a while.");
     }
   };
 
   return (
     <div className={styles.container}>
       <div>
-        <h3 className={styles.heading}>Reach Out Via Socials</h3>
+        <h3 className={styles.heading}>Contactez-moi par les réseaux</h3>
         <ContactCode />
       </div>
       <div>
-        <h3 className={styles.heading}>Or Fill Out This Form</h3>
+        <h3 className={styles.heading}>Ou envoyez-moi un message !</h3>
         <form className={styles.form} onSubmit={submitForm}>
           <div className={styles.flex}>
             <div>
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name">Nom</label>
               <input
                 type="text"
                 name="name"
@@ -60,7 +60,7 @@ const ContactPage = () => {
             </div>
           </div>
           <div>
-            <label htmlFor="name">Subject</label>
+            <label htmlFor="name">Sujet</label>
             <input
               type="text"
               name="subject"
@@ -81,7 +81,7 @@ const ContactPage = () => {
               required
             ></textarea>
           </div>
-          <button type="submit">Submit</button>
+          <button type="submit">Envoyez</button>
         </form>
       </div>
     </div>
@@ -90,7 +90,7 @@ const ContactPage = () => {
 
 export async function getStaticProps() {
   return {
-    props: { title: 'Contact' },
+    props: { title: "Contact" },
   };
 }
 
