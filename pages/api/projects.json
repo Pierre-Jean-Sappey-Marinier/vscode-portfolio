@@ -2,18 +2,9 @@
   {
     "id": 1,
     "name": "Kasa",
-    "image": "./public/Kasa.png",
+    "image": "/Kasa.png",
     "description": "Création d'une single page application responsive en composants fonctionnels sous React.js en utilisant la méthode CRA. Implémentation de routes avec React Router. Intégration dynamique des métadonnées via React-Helmet.",
-    "tags": [
-      "React",
-      "node",
-      "CRA",
-      "tailwind",
-      "SingPageApplication",
-      "ReactRouter",
-      "ReactHelmet",
-      "Responsive"
-    ],
+    "tags": ["react", "node", "CRA", "SingPageApplication", "Responsive"],
     "source_code": "https://github.com/Pierre-Jean-Sappey-Marinier/Kasa",
     "demo": "https://pierre-jean-sappey-marinier.github.io/Kasa/"
   },
