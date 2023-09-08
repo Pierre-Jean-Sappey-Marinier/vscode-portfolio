@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
       <div className={styles.image}>
         <Image
           className="Image"
-          objectFit="contain"
+          objectFit="cover"
           src={project.image}
           height={300}
           width={600}
@@ -40,14 +40,16 @@ const ProjectCard = ({ project }) => {
               Source Code
             </a>
           )}
-          <a
-            href={project.demo}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.underline}
-          >
-            Live Demo
-          </a>
+          {project.demo && (
+            <a
+              href={project.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.underline}
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>

@@ -27,9 +27,8 @@ const AboutPage = () => {
 
       <p className={styles.p}>
         Je vous remercie sincèrement d'avoir pris le temps de lire ces quesles
-        lignes sur mon parcours
+        lignes sur mon parcours.{" "}
       </p>
-
       <p className={styles.p}>
         Cordialement,
         <br />
