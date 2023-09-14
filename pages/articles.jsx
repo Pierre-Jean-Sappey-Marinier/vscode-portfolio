@@ -20,6 +20,7 @@ const ArticlesPage = ({ articles }) => {
           <ArticleCard key={article.id} article={article} />
         ))}
       </div> */}
+      En cours de rédaction ...
     </>
   );
 };

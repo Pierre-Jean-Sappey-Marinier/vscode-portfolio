@@ -16,7 +16,7 @@ const ContactPage = () => {
       body: JSON.stringify({ name, email, subject, message }),
     });
     if (res.ok) {
-      alert("Your response has been received!");
+      alert("Votre message à bien été envoyé !");
       setName("");
       setEmail("");
       setSubject("");

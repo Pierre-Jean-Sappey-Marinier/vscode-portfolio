@@ -1,0 +1,121 @@
+.container {
+  /* width: 700px; */
+  width: 100%;
+  /* padding-bottom: 70px; */
+  /* padding-top: 100px; */
+}
+
+.domaine {
+  display: flex;
+  /* gap: 20px; */
+  flex-direction: row;
+  font-weight: 400;
+  align-items: center;
+  width: 30%;
+}
+
+.domaine ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.h2 {
+  font-size: 20px;
+  padding: 12px 0px 20px 56px;
+  font-weight: 200;
+  color: #ffffff;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  font-weight: 100;
+  width: 100%;
+  /* padding-left: 30px; */
+}
+
+.skills ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.title {
+  /* font-size: 30px; */
+  padding: 50px 0px 0px 0px;
+}
+
+.resume {
+  color: #00ff95;
+}
+
+.telechargement {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.testbuttons {
+  position: relative;
+}
+
+.testbuttons::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.3s;
+}
+
+.testbuttons:hover::after,
+.testbuttons:focus::after {
+  width: 100%;
+}
+
+.testbuttons {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* width: 100%; */
+}
+
+.testbutton {
+  /* width: 22px; */
+}
+
+.span {
+  position: relative;
+  display: flex;
+  /* padding-left: 20px;
+  margin-left: 38px; */
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 2;
+}
+
+.resume {
+  display: flex;
+}
+
+@media screen and (max-width: 1064px) {
+  .container {
+    width: 100%;
+  }
+  .span {
+    font-size: 13px;
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .skills {
+    padding-left: 0px;
+  }
+  .span::before {
+    display: none;
+  }
+}

@@ -97,3 +97,73 @@
 .css-modules:hover {
   background: rgba(21, 114, 182, 0.25);
 }
+
+.middleware {
+  border: 0.1rem solid rgb(51, 153, 102); /* Vert pour "middleware" */
+}
+.middleware:hover {
+  background: rgba(51, 153, 102, 0.25);
+}
+
+.authentification {
+  border: 0.1rem solid rgb(255, 102, 0); /* Orange pour "authentification" */
+}
+.authentification:hover {
+  background: rgba(255, 102, 0, 0.25);
+}
+
+.debugging {
+  border: 0.1rem solid rgb(204, 0, 102); /* Rose pour "debugging" */
+}
+.debugging:hover {
+  background: rgba(204, 0, 102, 0.25);
+}
+
+.optimisation {
+  border: 0.1rem solid rgb(255, 204, 0); /* Jaune pour "optimisation" */
+}
+.optimisation:hover {
+  background: rgba(255, 204, 0, 0.25);
+}
+
+.javascript {
+  border: 0.1rem solid rgb(0, 102, 204); /* Bleu pour "javascript" */
+}
+.javascript:hover {
+  background: rgba(0, 102, 204, 0.25);
+}
+
+.html {
+  border: 0.1rem solid rgb(153, 0, 0); /* Rouge pour "html" */
+}
+.html:hover {
+  background: rgba(153, 0, 0, 0.25);
+}
+
+.css {
+  border: 0.1rem solid rgb(0, 51, 102); /* Bleu foncé pour "css" */
+}
+.css:hover {
+  background: rgba(0, 51, 102, 0.25);
+}
+
+.figma {
+  border: 0.1rem solid rgb(102, 0, 102); /* Violet pour "figma" */
+}
+.figma:hover {
+  background: rgba(102, 0, 102, 0.25);
+}
+
+.web-sémantique {
+  border: 0.1rem solid rgb(0, 102, 102); /* Vert foncé pour "web-sémantique" */
+}
+.web-sémantique:hover {
+  background: rgba(0, 102, 102, 0.25);
+}
+
+.responsive {
+  border: 0.1rem solid rgb(0, 153, 153); /* Turquoise pour "responsive" */
+}
+.responsive:hover {
+  background: rgba(0, 153, 153, 0.25);
+}

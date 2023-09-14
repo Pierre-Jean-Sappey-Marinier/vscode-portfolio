@@ -7,10 +7,10 @@ export default function HomePage() {
     <>
       <div className={styles.container}>
         <div className={styles.background}>
-          <h1>J'aime</h1>
-          <h1>Adeline</h1>
-          <h1>de tout</h1>
-          <h1>mon coeur</h1>
+          <h1>Je</h1>
+          <h1>creer</h1>
+          <h1>vos</h1>
+          <h1>sites</h1>
         </div>
         <div className={styles.foreground}>
           <div className={styles.content}>

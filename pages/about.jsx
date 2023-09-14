@@ -1,9 +1,10 @@
+import Skills from "../components/Skills";
 import styles from "../styles/About.module.css";
 
 const AboutPage = () => {
   return (
     <>
-      <h3>Qui suis-je ? </h3>
+      <h2>Qui suis-je ? </h2>
       <p className={styles.p}>
         Passionné du développement web avec une solide expertise en JavaScript,
         je me suis reconverti dans ce domaine après avoir travaillé pendant 10
@@ -34,6 +35,7 @@ const AboutPage = () => {
         <br />
         Pierre-Jean Sappey-Marinier
       </p>
+      <Skills />
     </>
   );
 };
