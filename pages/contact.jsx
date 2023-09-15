@@ -11,7 +11,7 @@ const ContactPage = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     console.log(process.env.NEXT_PUBLIC_API_URL);
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL2}/contact2`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact2`, {
       method: "POST",
       body: JSON.stringify({ name, email, subject, message }),
     });
