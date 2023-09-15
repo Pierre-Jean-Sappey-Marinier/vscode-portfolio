@@ -22,7 +22,7 @@ export default async (req, res) => {
     const { name, email, subject, message } = JSON.parse(req.body);
 
     const query =
-      "INSERT INTO DATABASE_MYSQL (Name, Email, Subject, Message) VALUES (?, ?, ?, ?)";
+      "INSERT INTO contacts (name, email, subject, message) VALUES (?, ?, ?, ?)";
     const values = [name, email, subject, message];
 
     connection.query(query, values, (error, results) => {
