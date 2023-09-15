@@ -1,8 +1,10 @@
+import { useRouter } from "next/router";
 import { useState } from "react";
 import ContactCode from "../components/ContactCode";
 import styles from "../styles/ContactPage.module.css";
 
 const ContactPage = () => {
+  const router = useRouter();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -10,8 +12,9 @@ const ContactPage = () => {
 
   const submitForm = async (e) => {
     e.preventDefault();
+    console.log("🚀 ~ file: contact.jsx:8 ~ ContactPage ~ router:", router);
     console.log(process.env.NEXT_PUBLIC_API_URL);
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/contact2`, {
+    const res = await fetch(`/api/contact2`, {
       method: "POST",
       body: JSON.stringify({ name, email, subject, message }),
     });
