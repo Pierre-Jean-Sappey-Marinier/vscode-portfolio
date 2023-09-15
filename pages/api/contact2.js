@@ -5,6 +5,7 @@ const dbConfig = {
   user: process.env.USER_MYSQL,
   password: process.env.PASSWORD_MYSQL,
   database: process.env.DATABASE_MYSQL,
+  port: process.env.PORT_MYSQL,
   connectTimeout: 20000,
 };
 
@@ -21,7 +22,7 @@ export default async (req, res) => {
     const { name, email, subject, message } = JSON.parse(req.body);
 
     const query =
-      "INSERT INTO votre_table_mysql (Name, Email, Subject, Message) VALUES (?, ?, ?, ?)";
+      "INSERT INTO DATABASE_MYSQL (Name, Email, Subject, Message) VALUES (?, ?, ?, ?)";
     const values = [name, email, subject, message];
 
     connection.query(query, values, (error, results) => {
