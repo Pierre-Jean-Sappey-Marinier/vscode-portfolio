@@ -1,6 +1,6 @@
 module.exports = {
   output: "export",
-  // distDir: "dist",
+  distDir: "dist",
   images: {
     domains: [
       "res.cloudinary.com",
