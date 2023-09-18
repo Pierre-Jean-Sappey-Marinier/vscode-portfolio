@@ -8,8 +8,8 @@ const contactItems = [
   },
   {
     social: "email",
-    link: "pierrejean.sm@gmail.com@gmail.com",
-    href: "mailto:pierrejean.sm@gmail.com@gmail.com",
+    link: "pierrejean.sm@gmail.com",
+    href: "mailto:pierrejean.sm@gmail.com",
   },
   {
     social: "github",
