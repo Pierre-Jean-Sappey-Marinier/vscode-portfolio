@@ -12,6 +12,9 @@
 .react {
   border: 0.1rem solid rgb(97, 218, 251);
 }
+.Jest {
+  border: 0.1rem solid rgb(97, 218, 251);
+}
 .react:hover {
   background: rgba(97, 218, 251, 0.25);
 }
@@ -38,8 +41,12 @@
 .mongodb {
   border: 0.1rem solid rgb(67, 153, 52);
 }
+
 .mongodb:hover {
   background: rgba(67, 153, 52, 0.25);
+}
+.Swagger {
+  border: 0.1rem solid rgb(67, 153, 52);
 }
 
 .next {
@@ -75,6 +82,10 @@
 }
 .next:hover {
   background: rgba(0, 112, 243, 0.25);
+}
+
+.clean-architecture {
+  border: 2px solid rgb(0, 112, 243);
 }
 
 .accessibilité {

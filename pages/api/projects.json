@@ -1,5 +1,13 @@
 [
   {
+    "id": 7,
+    "name": "Kucoin",
+    "image": "/kucoin.png",
+    "description": "Conception d’une API basée sur Express et Node.js en Clean architecture. Couverture de test à 100% sous Jest, intégration Swagger, validations des données d’entrées et de sortie.",
+    "tags": ["express", "node", "clean-architecture", "Jest", "Swagger"],
+    "source_code": "https://github.com/Pierre-Jean-Sappey-Marinier/flowdesk-cumulative-delta-api"
+  },
+  {
     "id": 1,
     "name": "Kasa",
     "image": "/Kasa.png",
@@ -32,15 +40,7 @@
     "source_code": "https://github.com/Pierre-Jean-Sappey-Marinier/NinacarducciVite",
     "demo": "https://pierre-jean-sappey-marinier.github.io/NinacarducciVite/"
   },
-  {
-    "id": 4,
-    "name": "VSCode Portfolio",
-    "image": "/vscode.png",
-    "description": "Un portfolio minimaliste pour les développeurs, construit avec Next.js et CSS Modules sur le thème de VSCode.",
-    "tags": ["next", "css-modules"],
-    "source_code": "https://github.com/Pierre-Jean-Sappey-Marinier/portfolio--Pierre-Jean",
-    "demo": "http://vscode-portfolio.vercel.app/"
-  },
+
   {
     "id": 5,
     "name": "Booki",
