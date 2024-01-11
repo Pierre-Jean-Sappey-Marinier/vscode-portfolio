@@ -79,48 +79,4 @@ export async function getStaticProps() {
   };
 }
 
-// export async function getStaticProps() {
-//   const userRes = await fetch(
-//     `https://api.github.com/users/${process.env.REACT_NEXT_PUBLIC_GITHUB_USERNAME}`,
-//     {
-//       headers: {
-//         Authorization: `token ${process.env.REACT_GITHUB_API_KEY}`,
-//       },
-//     }
-//   );
-//   console.log("🚀 ~ file: github.jsx:91 ~ getStaticProps ~ userRes:", userRes);
-//   const user = await userRes.json();
-//   console.log("🚀 ~ file: github.jsx:92 ~ getStaticProps ~ user:", user);
-
-//   const repoRes = await fetch(
-//     `https://api.github.com/users/${process.env.REACT_NEXT_PUBLIC_GITHUB_USERNAME}/repos?per_page=100`,
-//     {
-//       headers: {
-//         Authorization: `token ${process.env.REACT_GITHUB_API_KEY}`,
-//       },
-//     }
-//   );
-
-//   let repos = await repoRes.json();
-//   console.log("🚀 ~ file: github.jsx:104 ~ getStaticProps ~ repos:", repos);
-
-//   if (Array.isArray(repos)) {
-//     // Vérifier que repos est un tableau avant de le trier
-//     repos = repos
-//       .sort((a, b) => b.stargazers_count - a.stargazers_count)
-//       .slice(0, 6);
-//   } else {
-//     // Gérer le cas où repos n'est pas un tableau (par exemple, une erreur d'API)
-//     console.error(
-//       "La réponse de l'API GitHub n'est pas un tableau de référentiels."
-//     );
-//     repos = [];
-//   }
-
-//   return {
-//     props: { title: "GitHub", repos, user },
-//     revalidate: 10,
-//   };
-// }
-
 export default GithubPage;
