@@ -70,7 +70,8 @@ export async function getStaticProps() {
   );
   let repos = await repoRes.json();
   repos = repos
-    .sort((a, b) => b.stargazers_count - a.stargazers_count)
+    .filter((repo) => repo.stargazers_count !== undefined) // Remove repos without stargazers_count
+    .sort((a, b) => (b.stargazers_count || 0) - (a.stargazers_count || 0))
     .slice(0, 10);
 
   return {

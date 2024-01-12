@@ -1,4 +1,4 @@
-import Head from 'next/head';
+import Head from "next/head";
 
 const CustomHead = ({ title }) => {
   return (
@@ -6,20 +6,23 @@ const CustomHead = ({ title }) => {
       <title>{title}</title>
       <meta
         name="description"
-        content="Nitin Ranganath is an avid full stack web developer building websites and applications you'd love to use"
+        content="Pierre-Jean Sappey-Marinier is an avid full stack web developer building websites and applications you'd love to use"
       />
       <meta
         name="keywords"
-        content="nitin ranganath, nitin, ranganath, web developer portfolio, nitin web developer, nitin developer, mern stack, nitin ranganath portfolio, vscode-portfolio"
+        content="Pierre-Jean Sappey-Marinier, web developer portfolio,  web developer,  developer, mern stack, Pierre-Jean Sappey-Marinier portfolio, vscode-portfolio"
       />
-      <meta property="og:title" content="Nitin Ranganath's Portfolio" />
+      <meta
+        property="og:title"
+        content="Pierre-Jean Sappey-Marinier's Portfolio"
+      />
       <meta
         property="og:description"
         content="A full-stack developer building websites that you'd like to use."
       />
-      <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
+      {/* <meta property="og:image" content="https://imgur.com/4zi5KkQ.png" />
       <meta property="og:url" content="https://vscode-portfolio.vercel.app" />
-      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:card" content="summary_large_image" /> */}
     </Head>
   );
 };
@@ -27,5 +30,5 @@ const CustomHead = ({ title }) => {
 export default CustomHead;
 
 CustomHead.defaultProps = {
-  title: 'Nitin Ranganath',
+  title: "Pierre-Jean Sappey-Marinier",
 };

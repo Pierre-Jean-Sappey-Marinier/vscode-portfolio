@@ -21,36 +21,6 @@ const contactItems = [
     link: "Pierre-Jean-Sappey-Marinier",
     href: "https://www.linkedin.com/in/pierre-jean-sappey-marinier-4873a468/",
   },
-  // {
-  //   social: "twitter",
-  //   link: "iamnitinr",
-  //   href: "https://www.twitter.com/iamnitinr",
-  // },
-  // {
-  //   social: "instagram",
-  //   link: "iamnitinr",
-  //   href: "https://www.instagram.com/iamnitinr",
-  // },
-  // {
-  //   social: "polywork",
-  //   link: "nitinranganath",
-  //   href: "https://www.polywork.com/nitinranganath",
-  // },
-  // {
-  //   social: "telegram",
-  //   link: "iamnitinr",
-  //   href: "https://t.me/iamnitinr",
-  // },
-  // {
-  //   social: "codepen",
-  //   link: "nitinranganath",
-  //   href: "https://codepen.io/itsnitinr",
-  // },
-  // {
-  //   social: "codesandbox",
-  //   link: "itsnitinr",
-  //   href: "https://codesandbox.io/u/itsnitinr",
-  // },
 ];
 
 const contactPeople = [
